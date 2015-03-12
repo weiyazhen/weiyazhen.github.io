@@ -16,12 +16,21 @@
             -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
             overflow: hidden;
         }
-        #gameDiv {
+        #gameDiv,#txt {
             display:block;
             position:absolute;
-            margin: 222px auto;
+            margin: 222px auto 22px auto;
             padding: 0;
             border: 0;
+			font-size:45px;
+        }
+		#txt2,#txt3 {
+		    display:block;
+            position:absolute;
+			margin: 22px auto;
+			padding: 0;
+            border: 0;
+            font-size:15px;
         }
     </style>
 </head>
@@ -29,6 +38,15 @@
 <body onload="init();" style="background-color:#ffffff">
 <div style="position:relative;" id="gameDiv">
 	<img src="images/logo.png" />
+</div>
+<div id="txt" style="font-family:'Arial';position:relative;width:200px;height:60px">
+	@wyz_xyk
+</div>
+<div id="txt3" style="font-family:'Arial';position:relative;width:200px;height:60px">
+	我等了你一千年 + 50个轮回<br/>(文稿编写中，未完成)<br/>
+</div>
+<div id="txt2" style="font-family:'Arial';position:relative;width:400px;height:60px">
+	<b>丫头，你终于来了~</b>
 </div>
 </body>
 </html>
