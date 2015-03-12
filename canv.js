@@ -169,7 +169,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,654,115);
 	// timeline functions:
 	this.frame_1245 = function() {
 		this.stop();
-		window.open("logo.png","_top");
+		window.open("index2.html","_top");
 	}
 
 	// actions tween:
