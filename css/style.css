@@ -312,25 +312,26 @@ span.menu:before {
 }
 .Welcome-note-left-pic{
 	float: left;
-	width: 28%;
+	width: 50%;
 	margin-top: 0.5em;
 	text-align: center;
 }
 .Welcome-note-left-pic-info{
 	float: right;
-	width: 68%;
+	width: 48%;
 }
 .Welcome-note-left-pic-info p{
 	font-family: 'Satisfy', cursive;
-	color: #FFF;
-	font-size: 0.875em;
+	color: #75828f;
+	font-size: 0.775em;
 	margin:0;
-	padding:38px;
+	padding:10px;
 	margin-top: 0.5em;
 	text-align: right;
 }
 .Welcome-note-left-pic-info p span{
 	font-size: 1.2em;
+	color: #FFF;
 }
 .Welcome-note-right{
 	background: #120f12;
