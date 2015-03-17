@@ -1,52 +1,344 @@
-<!DOCTYPE html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>小雅的主页</title>
-    <style>
-        body {
-            text-align: center;
-            background: #ffffff;
-            padding: 0;
-            border: 0;
-            margin: 0;
-            height: 100%;
-        }
-        html {
-            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
-            overflow: hidden;
-        }
-        #gameDiv,#txt {
-            display:block;
-            position:absolute;
-            margin: 222px auto 22px auto;
-            padding: 0;
-            border: 0;
-			font-size:45px;
-        }
-		#txt2,#txt3 {
-		    display:block;
-            position:absolute;
-			margin: 22px auto;
-			padding: 0;
-            border: 0;
-            font-size:15px;
-        }
-    </style>
-</head>
-
-<body onload="init();" style="background-color:#ffffff">
-<div style="position:relative;" id="gameDiv">
-	<img src="images/logo.png" />
-</div>
-<div id="txt" style="font-family:'Arial';position:relative;width:200px;height:60px">
-	@wyz_xyk
-</div>
-<div id="txt3" style="font-family:'Arial';position:relative;width:200px;height:60px">
-	我等了你一千年 + 50个轮回<br/>(文稿编写中，未完成)<br/>
-</div>
-<div id="txt2" style="font-family:'Arial';position:relative;width:400px;height:60px">
-	<b>丫头，你终于来了~</b>
-</div>
-</body>
+	<head>
+		<title>小雅的主页  （俏妮斯）</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="The free Baku Iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="./css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,800,400,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+	</head>
+	<body>
+		<!-- container -->
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+				<!-- logo -->
+				<div class="logo">
+					<a href="index.html"><img src="./images/logo.png" title="baku" /></a>
+				</div>
+				<!-- logo -->
+				<!-- cart-info -->
+				<div class="cart-info">
+					<ul>
+						<li class="cartinfo"><a href="http://wd.koudai.com/?userid=214188894"><span> </span>微信: wyz_xyk</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- /cart-info -->
+				<div class="clearfix"> </div>
+			</div>
+			<!-- header -->
+		</div>
+		<!-- sub-header -->
+		<div class="sub-header">
+			<div class="container">
+				<!-- top-nav -->
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="404.html">About</a></li>
+						<li><a href="collections.html">What's new</a></li>
+						<li><a href="collections.html">Collections</a></li>
+						<li><a href="404.html">Baku Club</a></li>
+						<li><a href="404.html">Store Loation</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- top-nav -->
+				<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(300);
+						});
+					});
+				</script>
+				<!-- script-for-nav -->
+				<!-- search-form -->
+				<div class="search-form">
+					<form>
+						<input type="text" class="text" value="输入关键词搜索本站信息" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '输入关键词搜索本站信息';}">
+						<input type="submit" value="" />
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- /search-form -->
+			</div>
+		</div>
+		<!-- /sub-header -->
+		<!-- banner -->
+		<div class="banner">
+			<!--- img-slider --->
+				<div class="img-slider">
+						<!----start-slider-script---->
+					<script src="./js/responsiveslides.min.js"></script>
+					 <script>
+					    // You can also use "$(window).load(function() {"
+					    $(function () {
+					      // Slideshow 4
+					      $("#slider4").responsiveSlides({
+					        auto: true,
+					        pager: true,
+					        nav: true,
+					        speed: 500,
+					        namespace: "callbacks",
+					        before: function () {
+					          $('.events').append("<li>before event fired.</li>");
+					        },
+					        after: function () {
+					          $('.events').append("<li>after event fired.</li>");
+					        }
+					      });
+					
+					    });
+					  </script>
+					<!----//End-slider-script---->
+					<!-- Slideshow 4 -->
+					    <div  id="top" class="callbacks_container">
+					      <ul class="rslides" id="slider4">
+					        <li>
+					          <img class="img-responsive" src="./images/slide.jpg" alt="">
+					        </li>
+					        <li>
+					          <img src="./images/slide2.jpg" alt="">
+					        </li>
+					        <li>
+					          <img src="./images/slide.jpg" alt="">
+					        </li>
+					      </ul>
+					    </div>
+					    <div class="clearfix"> </div>
+					</div>
+						<!-- slider -->
+		</div>
+		<!-- banner -->
+		<!-- Welcome-note -->
+		<div class="Welcome-note">
+			<div class="Welcome-note-left">
+				<div class="Welcome-note-left-pic">
+					<img src="./images/pic1.png" title="name" />
+				</div>
+				<div class="Welcome-note-left-pic-info">
+					<p>Explore our New Arrivals in <span>Sterling Silver</span> and Exciting..</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="Welcome-note-right">
+				<p>What is <span>new</span></p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- Welcome-note -->
+		<!-- content -->
+		<div class="content">
+			<!-- top-grids -->
+			<div class="top-grids">
+			<div class="container">
+				<div class="product-grids">
+					<!---
+						<!----sreen-gallery-cursual---->
+							 <!-- requried-jsfiles-for owl -->
+							<link href="./css/owl.carousel.css" rel="stylesheet">
+							    <script src="./js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel text-center">
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic2.jpg" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic3.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic4.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic5.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic6.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic3.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic4.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic5.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="./images/pic3.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+				              </div>
+			</div>
+		</div>
+		</div>
+		<!-- top-grids -->
+		<!-- content -->
+		<!-- footer -->
+		<div class="footer">
+			<div class="footer-grids">
+				<div class="container">
+					<div class="col-md-3 footer-grid">
+						<h4>产品</h4>
+						<ul>
+							<li><a href="#">俏妮斯 A款（活性肽）</a></li>
+							<li><a href="#">俏妮斯 B款（冰膜）</a></li>
+							<li><a href="#">俏妮斯 C款（男士专用控油）</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>常见问题 (FAQ)</h4>
+						<ul>
+							<li><a href="#">真的有效吗？</a></li>
+							<li><a href="#">使用前应该做什么准备？</a></li>
+							<li><a href="#">一盒能用多久？</a></li>
+							<li><a href="#">为什么在你这里能拿最低价？</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>更多细节</h4>
+						<ul>
+							<li><a href="#">关于我</a></li>
+							<li><a href="#">前往微店</a></li>
+							<li><a href="#">购买注意事项</a></li>
+							<li><a href="#">加入我的队伍</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid contact-grid">
+						<h4>联系我</h4>
+						<ul>
+							<li><span class="c-icon"> </span>wyz_xyk</li>
+							<li><span class="c-icon1"> </span><a href="#">weiyazhen530@qq.com</a></li>
+							<li><span class="c-icon2"> </span>326338552</li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="#"><span class="facebook"> </span></a></li>
+							<li><a href="#"><span class="twitter"> </span></a></li>
+							<li><a href="#"><span class="thumb"> </span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- news-letter -->
+			<div class="container">
+			<div class="news-letter">
+					<div class="news-letter-left">
+						<a href="http://wd.koudai.com/?userid=214188894"><span> </span>进入微店</a>
+					</div>
+					<div class="news-letter-right">
+						<p>Subscribe to notification about disconunts anf Offers from our store enter your Email id :</p>
+						<form>
+							<input type="text" class="text" value="Enter your mail id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mail id';}">
+							<input type="submit" value="" />
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- news-letter -->
+		</div>
+		<!-- footer -->
+		<!-- copy-right -->
+		<div class="copy-right">
+				<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+		</div>
+		<!-- copy-right -->
+		<!-- container -->
+	</body>
 </html>
+
