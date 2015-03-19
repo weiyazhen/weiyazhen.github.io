@@ -129,6 +129,19 @@ p.nominalBounds = new cjs.Rectangle(2,0,104,166);
 p.nominalBounds = new cjs.Rectangle(0,0,250,106);
 
 
+(lib.bg = function() {
+	this.initialize();
+
+	// 图层 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("Eg2DBPhMAAAifCMBsHAAAMAAACfCg");
+	this.shape.setTransform(346,509);
+
+	this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,692,1018);
+
+
 (lib.a3 = function() {
 	this.initialize();
 
@@ -167,13 +180,32 @@ p.nominalBounds = new cjs.Rectangle(0,0,654,115);
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
+	this.frame_0 = function() {
+		/* Mouse Click 事件
+		单击此指定的元件实例会执行您可在其中添加自己的自定义代码的函数。
+		
+		说明:
+		1. 在以下"// 开始您的自定义代码"行后的新行上添加您的自定义代码。
+		单击此元件实例时，此代码将执行。
+		*/
+		
+		this.bg.addEventListener("click", fl_MouseClickHandler.bind(this));
+		
+		function fl_MouseClickHandler()
+		{
+			// 开始您的自定义代码
+			// 此示例代码在"输出"面板中显示"已单击鼠标"。
+			window.open("index2.html","_top");
+			// 结束您的自定义代码
+		}
+	}
 	this.frame_1245 = function() {
 		this.stop();
 		window.open("index2.html","_top");
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1245).call(this.frame_1245).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1245).call(this.frame_1245).wait(1));
 
 	// c
 	this.instance = new lib.c1();
@@ -253,8 +285,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,654,115);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(515).to({_off:false},0).to({scaleX:1,scaleY:1,x:320,alpha:1},13).wait(697).to({alpha:0},20).wait(1));
 
+	// 图层 12
+	this.bg = new lib.bg();
+	this.bg.setTransform(336,487,1,1,0,0,0,346,509);
+
+	this.timeline.addTween(cjs.Tween.get(this.bg).to({_off:true},1245).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(627.8,1424.7,24.6,24.6);
+p.nominalBounds = new cjs.Rectangle(310,458,692,1018);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
